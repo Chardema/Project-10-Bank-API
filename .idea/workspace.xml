@@ -4,12 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Mango is working">
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Init react">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/Body/Body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/Body/Body.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/Footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/Footer/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/img/bank-tree.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/img/icon/icon-chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/img/icon/icon-money.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/img/icon/icon-security.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/app/page.module.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,30 +41,35 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QdpR4aAWOqPzuKvhyFTYPeUj2o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/OneDrive/Documents/chardeman_13_02062023&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/chris/OneDrive/Documents/chardeman_13_02062023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -76,7 +99,9 @@
       <workItem from="1685696422831" duration="3216000" />
       <workItem from="1685714486237" duration="22000" />
       <workItem from="1685714516771" duration="5673000" />
-      <workItem from="1686649398034" duration="1123000" />
+      <workItem from="1686649398034" duration="1339000" />
+      <workItem from="1686650787662" duration="260000" />
+      <workItem from="1686651294186" duration="4959000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -106,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685720836661</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Init react">
+      <created>1686650602487</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686650602487</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +148,7 @@
     <MESSAGE value="Put some order for the beginning" />
     <MESSAGE value="Put some order for the beginning -- the come back" />
     <MESSAGE value="Mango is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mango is working" />
+    <MESSAGE value="Init react" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init react" />
   </component>
 </project>
