@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./Body.module.scss";
+import chatIcon from "./../../img/icon-chat.png"
+import moneyIcon from "./../../img/icon-money.png"
+import securityIcon from "./../../img/icon-security.png"
 
 function Main() {
     return (
@@ -16,7 +19,7 @@ function Main() {
             <section className={styles.features}>
                 <h2 className={styles.srOnly}>Features</h2>
                 <div className={styles.featureItem}>
-                    <img src="./img/icon-chat.png" alt="Chat Icon" className={styles.featureIcon} />
+                    <img src={chatIcon} alt="Chat Icon" className={styles.featureIcon} />
                     <h3 className={styles.featureItemTitle}>You are our #1 priority</h3>
                     <p>
                         Need to talk to a representative? You can get in touch through our
@@ -25,7 +28,7 @@ function Main() {
                 </div>
                 <div className={styles.featureItem}>
                     <img
-                        src="./img/icon-money.png"
+                        src={moneyIcon}
                         alt="Chat Icon"
                         className={styles.featureIcon}
                     />
@@ -36,7 +39,7 @@ function Main() {
                 </div>
                 <div className={styles.featureItem}>
                     <img
-                        src="./img/icon-security.png"
+                        src={securityIcon}
                         alt="Chat Icon"
                         className={styles.featureIcon}
                     />
