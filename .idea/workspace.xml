@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Put some order for the beginning -- the come back">
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Mango is working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-end/server/database/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/back-end/server/database/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/img/bank-tree.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/img/icon/icon-chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/img/icon/icon-money.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/img/icon/icon-security.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,19 @@
     ]
   }
 }</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\OneDrive\Documents\chardeman_13_02062023\front-end\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +75,8 @@
       <workItem from="1685696168097" duration="246000" />
       <workItem from="1685696422831" duration="3216000" />
       <workItem from="1685714486237" duration="22000" />
-      <workItem from="1685714516771" duration="5159000" />
+      <workItem from="1685714516771" duration="5673000" />
+      <workItem from="1686649398034" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -84,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685714925686</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mango is working">
+      <created>1685720836661</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685720836661</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Put some order for the beginning" />
     <MESSAGE value="Put some order for the beginning -- the come back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Put some order for the beginning -- the come back" />
+    <MESSAGE value="Mango is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mango is working" />
   </component>
 </project>
