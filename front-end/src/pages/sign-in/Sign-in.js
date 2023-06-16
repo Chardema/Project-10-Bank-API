@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Sign-in.module.scss";
 import Header from "../../components/Header/Header";
+import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer"
 const SignIn = () => {
     return (
@@ -24,7 +25,7 @@ const SignIn = () => {
                             <label htmlFor="remember-me">Remember me</label>
                         </div>
                         {/* PLACEHOLDER DUE TO STATIC SITE */}
-                        <a href="./user.html" className={styles.signInButton}>Sign In</a>
+                        <Link to="/users" className={styles.signInButton}>Sign In</Link>
                         {/* SHOULD BE THE BUTTON BELOW */}
                         {/* <button class="sign-in-button">Sign In</button> */}
                     </form>

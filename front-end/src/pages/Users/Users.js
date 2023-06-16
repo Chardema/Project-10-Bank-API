@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer"
 function Users() {
     return (
         <div className={styles.users}>
-        <Header />
+            <Header />
         <main className={`${styles.main} ${styles.bgDark}`}>
             <div className={styles.header}>
                 <h1>Welcome back<br />Tony Jarvis!</h1>
