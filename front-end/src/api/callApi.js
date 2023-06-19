@@ -13,6 +13,12 @@ const users = [
     },
 ];
 
+export const updateFirstName = (email, newFirstName) => {
+    const userIndex = users.findIndex(user => user.email === email);
+    if (userIndex !== -1) {
+        users[userIndex].firstName = newFirstName;
+    }
+};
 export const login = (email, password) => {
     return new Promise((resolve, reject) => {
         const user = users.find(
