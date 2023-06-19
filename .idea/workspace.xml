@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Ajout route et maquette sign-in, maquette users en cours de finalisation">
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Finalisation mise en place V1 maquette">
+      <change afterPath="$PROJECT_DIR$/front-end/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/store/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Users/Users.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Users/Users.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +85,8 @@
       <workItem from="1686649398034" duration="1339000" />
       <workItem from="1686650787662" duration="260000" />
       <workItem from="1686651294186" duration="6544000" />
-      <workItem from="1686909972408" duration="5283000" />
+      <workItem from="1686909972408" duration="5535000" />
+      <workItem from="1687165903268" duration="3176000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -141,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686919559590</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finalisation mise en place V1 maquette">
+      <created>1686920387989</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686920387989</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +165,7 @@
     <MESSAGE value="Début mise en place maquette" />
     <MESSAGE value="Final maquette Accueil" />
     <MESSAGE value="Ajout route et maquette sign-in, maquette users en cours de finalisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout route et maquette sign-in, maquette users en cours de finalisation" />
+    <MESSAGE value="Finalisation mise en place V1 maquette" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalisation mise en place V1 maquette" />
   </component>
 </project>
