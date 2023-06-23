@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="ébauche logout et maj nom">
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Mise à jour des routes pour correspondre à celle du projet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +84,7 @@
       <workItem from="1686651294186" duration="6544000" />
       <workItem from="1686909972408" duration="5535000" />
       <workItem from="1687165903268" duration="9330000" />
-      <workItem from="1687522001274" duration="403000" />
+      <workItem from="1687522001274" duration="1684000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -169,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687186869183</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Mise à jour des routes pour correspondre à celle du projet">
+      <created>1687522570870</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687522570870</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +195,8 @@
     <MESSAGE value="MEP redux et données mockées" />
     <MESSAGE value="login OK" />
     <MESSAGE value="ébauche logout et maj nom" />
-    <option name="LAST_COMMIT_MESSAGE" value="ébauche logout et maj nom" />
+    <MESSAGE value="Mise à jour des routes pour correspondre à celle du projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour des routes pour correspondre à celle du projet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

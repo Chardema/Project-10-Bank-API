@@ -1,16 +1,25 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 import styles from "./Users.module.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
-import { updateFirstName } from "./../../api/callApi";
+import { updateFirstName } from "../../api/callApi";
 
 function Users() {
     const dispatch = useDispatch();
     const [isEditingName, setIsEditingName] = useState(false);
     const [newFirstName, setNewFirstName] = useState("");
     const firstName = useSelector(state => state.user.firstName);
+    const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
 
+
+    if (!isAuthenticated){
+        return <p> Connectez vous afin d'accéder à cette page <br/>
+                <Link to="/"> Retourner à la page d'accueil</Link> ou <br/>
+                <Link to="/login"> Je me connecte</Link>
+                </p>
+    }
     const handleEditNameClick = () => {
         setIsEditingName(true);
     };
@@ -32,29 +41,27 @@ function Users() {
             <Header />
             <main className={`${styles.main} ${styles.bgDark}`}>
                 <div className={styles.header}>
-                    {isEditingName ? (
-                        <>
-                            <input
-                                type="text"
-                                value={newFirstName}
-                                onChange={handleNewFirstNameChange}
-                            />
-                            <button onClick={handleSaveClick}>Save</button>
-                        </>
-                    ) : (
-                        <h1>
-                            Welcome back
-                            <br />
-                            {firstName}!
-                        </h1>
-                    )}
-                    <button
-                        onClick={handleEditNameClick}
-                        className={styles.editButton}
-                    >
+                    <h1>
+                        Welcome back
+                        <br />
+                        {isEditingName ? (
+                            <>
+                                <input
+                                    type="text"
+                                    value={newFirstName}
+                                    onChange={handleNewFirstNameChange}
+                                />
+                                <button onClick={handleSaveClick}>Save</button>
+                            </>
+                        ) : (
+                            firstName
+                        )}
+                    </h1>
+                    <button onClick={handleEditNameClick} className={styles.editButton}>
                         Edit Name
                     </button>
                 </div>
+
                 <h2 className={styles.srOnly}>Accounts</h2>
                 <section className={styles.account}>
                     <div className={styles.accountContentWrapper}>
