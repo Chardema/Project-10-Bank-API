@@ -15,7 +15,6 @@ function Users() {
     const [newLastName, setNewLastName] = useState("");
     const firstName = useSelector(state => state.user.firstName);
     const lastName = useSelector(state => state.user.lastName);
-    const email = useSelector(state => state.user.email)
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
 
     useEffect(() => {

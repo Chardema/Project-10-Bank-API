@@ -3,17 +3,24 @@ import styles from "./Sign-in.module.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useDispatch } from "react-redux";
-import ServiceAuth from "../../services/serviceAuth"; // importez la fonction login de votre fichier callApi
 import { useNavigate } from "react-router-dom";
+import { useSelector} from 'react-redux'
 import {getLocalStorage, setLocalStorage} from "../../services/serviceCookie";
 import serviceAuth from "../../services/serviceAuth";
+import {useEffect} from "react";
 
 const SignIn = () => {
     const [email, setEmail] = useState(getLocalStorage('email') || '');
     const [password, setPassword] = useState("");
+    const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
+    useEffect(() => {
+        if (isAuthenticated) {
+            navigate('/profile');
+        }
+    }, [isAuthenticated, navigate]);
     const handleEmailChange = event => {
         setEmail(event.target.value);
     };
