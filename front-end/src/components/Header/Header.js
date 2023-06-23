@@ -33,7 +33,7 @@ function Header() {
                         Log Out
                     </button>
                 ) : (
-                    <Link to="/sign-in" className={styles.mainnavitem}>
+                    <Link to="/login" className={styles.mainnavitem}>
                         <FontAwesomeIcon icon="user-circle" />
                         Sign In
                     </Link>

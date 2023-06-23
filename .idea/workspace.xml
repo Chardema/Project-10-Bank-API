@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="login OK">
-      <change afterPath="$PROJECT_DIR$/front-end/src/store/reducers/userReducer.js" afterDir="false" />
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="ébauche logout et maj nom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/api/callApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/api/callApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,28 +26,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/OneDrive/Documents/chardeman_13_02062023&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/chris/OneDrive/Documents/chardeman_13_02062023",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -88,7 +82,8 @@
       <workItem from="1686650787662" duration="260000" />
       <workItem from="1686651294186" duration="6544000" />
       <workItem from="1686909972408" duration="5535000" />
-      <workItem from="1687165903268" duration="8558000" />
+      <workItem from="1687165903268" duration="9330000" />
+      <workItem from="1687522001274" duration="403000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -167,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687182496567</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ébauche logout et maj nom">
+      <created>1687186869183</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687186869183</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,14 +186,14 @@
     <MESSAGE value="Finalisation mise en place V1 maquette" />
     <MESSAGE value="MEP redux et données mockées" />
     <MESSAGE value="login OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="login OK" />
+    <MESSAGE value="ébauche logout et maj nom" />
+    <option name="LAST_COMMIT_MESSAGE" value="ébauche logout et maj nom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/front-end/src/components/Header/Header.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
