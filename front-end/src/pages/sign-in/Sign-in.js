@@ -3,11 +3,13 @@ import styles from "./Sign-in.module.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useDispatch } from "react-redux";
-import { login } from "../../api/callApi"; // importez la fonction login de votre fichier callApi
+import ServiceAuth from "../../services/serviceAuth"; // importez la fonction login de votre fichier callApi
 import { useNavigate } from "react-router-dom";
+import {getLocalStorage, setLocalStorage} from "../../services/serviceCookie";
+import serviceAuth from "../../services/serviceAuth";
 
 const SignIn = () => {
-    const [email, setEmail] = useState("");
+    const [email, setEmail] = useState(getLocalStorage('email') || '');
     const [password, setPassword] = useState("");
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -22,8 +24,9 @@ const SignIn = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        login(email, password)
+        serviceAuth.login(email, password)
             .then(user => {
+                setLocalStorage('email',email) // stock l'adresse mail de l'utilisateur
                 dispatch({
                     type: "LOGIN_SUCCESS",
                     payload: {

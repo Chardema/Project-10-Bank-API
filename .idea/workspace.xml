@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Protection page profile">
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="Correction problème affichage lastname et modif">
+      <change afterPath="$PROJECT_DIR$/front-end/src/services/baseUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/services/serviceAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/services/serviceCookie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/api/callApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/api/callApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/store/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/store/reducers/userReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +90,7 @@
       <workItem from="1686651294186" duration="6544000" />
       <workItem from="1686909972408" duration="5535000" />
       <workItem from="1687165903268" duration="9330000" />
-      <workItem from="1687522001274" duration="5131000" />
+      <workItem from="1687522001274" duration="12719000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -187,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687523750799</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Correction problème affichage lastname et modif">
+      <created>1687527394933</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687527394933</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +217,8 @@
     <MESSAGE value="ébauche logout et maj nom" />
     <MESSAGE value="Mise à jour des routes pour correspondre à celle du projet" />
     <MESSAGE value="Protection page profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Protection page profile" />
+    <MESSAGE value="Correction problème affichage lastname et modif" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction problème affichage lastname et modif" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
