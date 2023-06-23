@@ -4,7 +4,9 @@ import styles from "./Users.module.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
-import {updateFirstName, updateLastName} from "../../api/callApi";
+import {getProfile, updateProfile} from "../../services/serviceProfile";
+import {useEffect} from "react";
+
 
 function Users() {
     const dispatch = useDispatch();
@@ -16,6 +18,16 @@ function Users() {
     const email = useSelector(state => state.user.email)
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
 
+    useEffect(() => {
+        getProfile()
+            .then(response => {
+                const user = response.data.body;
+                dispatch({ type: "LOGIN_SUCCESS", payload: { user } });
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }, []);
 
     if (!isAuthenticated){
         return <p> Connectez vous afin d'accéder à cette page <br/>
@@ -35,12 +47,9 @@ function Users() {
         setNewLastName(event.target.value);
     };
     const handleSaveClick = () => {
-        updateFirstName(email, newFirstName);
-        updateLastName(email, newLastName);
-        // Mettre à jour la valeur de firstName dans le store Redux
+        updateProfile(newFirstName, newLastName);
         dispatch({ type: "UPDATE_FIRST_NAME", firstName: newFirstName });
         dispatch({ type: "UPDATE_LAST_NAME", lastName: newLastName });
-        // Masquer le champ de saisie et le bouton Save
         setIsEditingName(false);
     };
 

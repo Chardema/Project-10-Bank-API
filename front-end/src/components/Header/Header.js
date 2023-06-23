@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import {deleteLocalStorage} from "../../services/serviceCookie";
 
 function Header() {
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
@@ -12,6 +13,7 @@ function Header() {
     const navigate = useNavigate();
 
     const handleLogoutClick = () => {
+        deleteLocalStorage('signin-token');
         dispatch({ type: "LOGOUT" });
         navigate("/");
     };
