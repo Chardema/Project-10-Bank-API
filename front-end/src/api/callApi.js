@@ -19,6 +19,12 @@ export const updateFirstName = (email, newFirstName) => {
         users[userIndex].firstName = newFirstName;
     }
 };
+export const updateLastName = (email, newLastName) => {
+    const userIndex = users.findIndex(user => user.email === email);
+    if (userIndex !== -1) {
+        users[userIndex].lastName = newLastName;
+    }
+};
 export const login = (email, password) => {
     return new Promise((resolve, reject) => {
         const user = users.find(

@@ -30,7 +30,7 @@ const SignIn = () => {
                         user,
                     },
                 });
-                navigate("/profile"); // redirigez l'utilisateur vers la page /users
+                navigate("/profile"); // redirigez l'utilisateur vers la page /profile
             })
             .catch(error => {
                 console.log("quelque chose va po")

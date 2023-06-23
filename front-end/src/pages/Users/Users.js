@@ -4,13 +4,16 @@ import styles from "./Users.module.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
-import { updateFirstName } from "../../api/callApi";
+import {updateFirstName, updateLastName} from "../../api/callApi";
 
 function Users() {
     const dispatch = useDispatch();
     const [isEditingName, setIsEditingName] = useState(false);
     const [newFirstName, setNewFirstName] = useState("");
+    const [newLastName, setNewLastName] = useState("");
     const firstName = useSelector(state => state.user.firstName);
+    const lastName = useSelector(state => state.user.lastName);
+    const email = useSelector(state => state.user.email)
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
 
 
@@ -28,10 +31,15 @@ function Users() {
         setNewFirstName(event.target.value);
     };
 
+    const handleNewLastNameChange = event => {
+        setNewLastName(event.target.value);
+    };
     const handleSaveClick = () => {
-        updateFirstName(newFirstName);
+        updateFirstName(email, newFirstName);
+        updateLastName(email, newLastName);
         // Mettre à jour la valeur de firstName dans le store Redux
         dispatch({ type: "UPDATE_FIRST_NAME", firstName: newFirstName });
+        dispatch({ type: "UPDATE_LAST_NAME", lastName: newLastName });
         // Masquer le champ de saisie et le bouton Save
         setIsEditingName(false);
     };
@@ -51,13 +59,21 @@ function Users() {
                                     value={newFirstName}
                                     onChange={handleNewFirstNameChange}
                                 />
+                                <input
+                                    type="text"
+                                    value={newLastName}
+                                    onChange={handleNewLastNameChange}
+                                />
                                 <button onClick={handleSaveClick}>Save</button>
                             </>
                         ) : (
-                            firstName
+                            `${firstName} ${lastName}`
                         )}
                     </h1>
-                    <button onClick={handleEditNameClick} className={styles.editButton}>
+                    <button
+                        onClick={handleEditNameClick}
+                        className={styles.editButton}
+                    >
                         Edit Name
                     </button>
                 </div>
