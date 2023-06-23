@@ -3,8 +3,14 @@ import { baseUrl } from './baseUrl';
 import {getLocalStorage} from "./serviceCookie";
 
 export const getProfile = () => {
-    return axios.get(baseUrl + '/profile');
+    const token = getLocalStorage('signin-token');
+    return axios.get(baseUrl + '/profile', {
+        headers: {
+            Authorization: `Bearer ${token}`,
+        },
+    });
 };
+
 
 export const updateProfile = (newFirstName, newLastName) => {
     const token = getLocalStorage('signin-token');
