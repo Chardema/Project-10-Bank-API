@@ -16,16 +16,16 @@ const SignIn = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [rememberMe, setRememberMe] = useState(false)
-
+// vérifie que l'user est connecté ou non pour le rediriger vers /profile
     useEffect(() => {
         if (isAuthenticated) {
-            navigate('/profile');
+            navigate('/profile', {replace : true});
         }
     }, [isAuthenticated, navigate]);
     const handleEmailChange = event => {
         setEmail(event.target.value);
     };
-
+    //vérifie le changement d'état du bouton remember me pour stocker ou non l'email
     const handleRememberMeChange = event => {
         setRememberMe(event.target.checked);
         if (event.target.checked) {
