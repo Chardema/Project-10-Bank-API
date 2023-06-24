@@ -74,12 +74,14 @@ function Users() {
                                     value={newFirstName}
                                     onChange={handleNewFirstNameChange}
                                     className={styles.firstChange}
+                                    placeholder={firstName}
                                 />
                                 <input
                                     type="text"
                                     value={newLastName}
                                     onChange={handleNewLastNameChange}
                                     className={styles.lastChange}
+                                    placeholder={lastName}
                                 />
                             </div>
                             <div>
@@ -101,6 +103,7 @@ function Users() {
                 </div>
 
                 <h2 className={styles.srOnly}>Accounts</h2>
+                <div className={styles.bankaccount} >
                 <section className={styles.account}>
                     <div className={styles.accountContentWrapper}>
                         <h3 className={styles.accountTitle}>
@@ -155,6 +158,7 @@ function Users() {
                         </button>
                     </div>
                 </section>
+                </div>
             </main>
             <Footer />
         </div>
