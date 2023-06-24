@@ -24,7 +24,28 @@
       color: #42b983;
     }
   }
-
+  .login, .profile {
+    border: none;
+    padding: 20px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    .loginicon, .profileicon {
+      padding-right: 10px;
+    }
+  }
+.logout {
+  border: none;
+  padding: 20px;
+  background-color: white;
+  font-size: 17px;
+  cursor: pointer;
+  .logouticon {
+    padding-right: 10px;
+  }
+}
   .mainnavitem {
     text-decoration: none;
     margin-right: 0.5rem;

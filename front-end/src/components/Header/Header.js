@@ -9,6 +9,7 @@ import {deleteLocalStorage} from "../../services/serviceCookie";
 
 function Header() {
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
+    const firstName = useSelector(state => state.user.firstName);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -30,13 +31,19 @@ function Header() {
             </Link>
             <div>
                 {isAuthenticated ? (
-                    <button onClick={handleLogoutClick} className={styles.mainnavitem}>
-                        <FontAwesomeIcon icon="sign-out-alt" />
-                        Log Out
-                    </button>
+                    <>
+                        <Link to="/profile" className={styles.profile}>
+                            <FontAwesomeIcon icon="user-circle" className={styles.profileicon} />
+                            {firstName}
+                        </Link>
+                        <button onClick={handleLogoutClick} className={styles.logout}>
+                            <FontAwesomeIcon icon="sign-out-alt" className={styles.logouticon} />
+                            Log Out
+                        </button>
+                    </>
                 ) : (
-                    <Link to="/login" className={styles.mainnavitem}>
-                        <FontAwesomeIcon icon="user-circle" />
+                    <Link to="/login" className={styles.login}>
+                        <FontAwesomeIcon className={styles.loginicon} icon="user-circle" />
                         Sign In
                     </Link>
                 )}
@@ -46,6 +53,7 @@ function Header() {
 }
 
 export default Header;
+
 
 
 

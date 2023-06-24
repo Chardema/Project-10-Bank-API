@@ -3,7 +3,16 @@
 }
 .header {
   color: #fff;
+  padding-top: 2rem;
   margin-bottom: 2rem;
+}
+.header h1 {
+  margin : 0;
+}
+
+.headertext {
+  font-size: 32px;
+  font-weight: bold;
 }
 .bgDark {
   background-color: #12002b;
@@ -28,6 +37,16 @@
   color: #fff;
   font-weight: bold;
   padding: 10px;
+  margin-top: 1rem;
+}
+
+.saveButton, .cancelButton {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 10px 40px;
+  background-color: white;
+  border-color:#00bc77 ;
+  color: #00bc77;
 }
 
 .account {

@@ -41,6 +41,11 @@ function Users() {
     const handleNewFirstNameChange = event => {
         setNewFirstName(event.target.value);
     };
+    const handleCancelClick = () => {
+        setNewFirstName("");
+        setNewLastName("");
+        setIsEditingName(false);
+    };
 
     const handleNewLastNameChange = event => {
         setNewLastName(event.target.value);
@@ -59,31 +64,40 @@ function Users() {
                 <div className={styles.header}>
                     <h1>
                         Welcome back
+                    </h1>
                         <br />
-                        {isEditingName ? (
-                            <>
+                    {isEditingName ? (
+                        <>
+                            <div>
                                 <input
                                     type="text"
                                     value={newFirstName}
                                     onChange={handleNewFirstNameChange}
+                                    className={styles.firstChange}
                                 />
                                 <input
                                     type="text"
                                     value={newLastName}
                                     onChange={handleNewLastNameChange}
+                                    className={styles.lastChange}
                                 />
-                                <button onClick={handleSaveClick}>Save</button>
-                            </>
-                        ) : (
-                            `${firstName} ${lastName}`
-                        )}
-                    </h1>
-                    <button
-                        onClick={handleEditNameClick}
-                        className={styles.editButton}
-                    >
-                        Edit Name
-                    </button>
+                            </div>
+                            <div>
+                                <button onClick={handleSaveClick} className={styles.saveButton}>Save</button>
+                                <button onClick={handleCancelClick} className={styles.cancelButton}>Cancel</button>
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <div className={styles.headertext}>{`${firstName} ${lastName}`} </div>
+                            <button
+                                onClick={handleEditNameClick}
+                                className={styles.editButton}
+                            >
+                                Modifier le nom
+                            </button>
+                        </>
+                    )}
                 </div>
 
                 <h2 className={styles.srOnly}>Accounts</h2>
