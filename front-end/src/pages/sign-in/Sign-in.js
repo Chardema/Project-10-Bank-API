@@ -15,6 +15,7 @@ const SignIn = () => {
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const [rememberMe, setRememberMe] = useState(false)
 
     useEffect(() => {
         if (isAuthenticated) {
@@ -25,6 +26,14 @@ const SignIn = () => {
         setEmail(event.target.value);
     };
 
+    const handleRememberMeChange = event => {
+        setRememberMe(event.target.checked);
+        if (event.target.checked) {
+            setLocalStorage('email', email);
+        } else {
+            setLocalStorage('email', '');
+        }
+    };
     const handlePasswordChange = event => {
         setPassword(event.target.value);
     };
@@ -74,7 +83,7 @@ const SignIn = () => {
                             />
                         </div>
                         <div className={styles.inputRemember}>
-                            <input type="checkbox" id="remember-me" />
+                            <input type="checkbox" id="remember-me" checked={rememberMe} onChange={handleRememberMeChange} />
                             <label htmlFor="remember-me">Remember me</label>
                         </div>
                         <button type="submit" className={styles.signInButton}>

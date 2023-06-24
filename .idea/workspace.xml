@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="modif dans le style du nom et ajout visibilité profil quant log dans header">
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="modif style et finalisation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Users/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Users/Users.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Users/Users.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,8 @@
       <workItem from="1687522001274" duration="18362000" />
       <workItem from="1687591643578" duration="395000" />
       <workItem from="1687592069662" duration="295000" />
-      <workItem from="1687592373671" duration="8135000" />
+      <workItem from="1687592373671" duration="10109000" />
+      <workItem from="1687616783408" duration="291000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -238,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687603939451</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="modif style et finalisation">
+      <option name="closed" value="true" />
+      <created>1687607880700</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1687607880700</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +273,8 @@
     <MESSAGE value="récupération données database et manipulation ok" />
     <MESSAGE value="modif createRoot pour react 18" />
     <MESSAGE value="modif dans le style du nom et ajout visibilité profil quant log dans header" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif dans le style du nom et ajout visibilité profil quant log dans header" />
+    <MESSAGE value="modif style et finalisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif style et finalisation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
