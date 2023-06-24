@@ -15,7 +15,7 @@ const SignIn = () => {
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const [rememberMe, setRememberMe] = useState(false)
+    const [rememberMe, setRememberMe] = useState(!!getLocalStorage('email'))
 // vérifie que l'user est connecté ou non pour le rediriger vers /profile
     useEffect(() => {
         if (isAuthenticated) {
@@ -42,7 +42,6 @@ const SignIn = () => {
         event.preventDefault();
         serviceAuth.login(email, password)
             .then(user => {
-                setLocalStorage('email',email) // stock l'adresse mail de l'utilisateur
                 dispatch({
                     type: "LOGIN_SUCCESS",
                     payload: {

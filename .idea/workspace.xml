@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="ajout remember me avec localstorage pour e-mail">
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/sign-in/Sign-in.js" afterDir="false" />
-    </list>
+    <list default="true" id="dc98b0f6-2a27-4fcd-a021-b0ee47c60935" name="Changes" comment="ajout replace pour éviter les retours en arrière vers la page login quant l'user est déjà log" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +85,7 @@
       <workItem from="1687591643578" duration="395000" />
       <workItem from="1687592069662" duration="295000" />
       <workItem from="1687592373671" duration="10109000" />
-      <workItem from="1687616783408" duration="600000" />
+      <workItem from="1687616783408" duration="930000" />
     </task>
     <task id="LOCAL-00001" summary="Put some order for the beginning">
       <created>1685714710999</created>
@@ -253,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687617187239</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ajout replace pour éviter les retours en arrière vers la page login quant l'user est déjà log">
+      <option name="closed" value="true" />
+      <created>1687617706839</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1687617706839</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +288,8 @@
     <MESSAGE value="modif dans le style du nom et ajout visibilité profil quant log dans header" />
     <MESSAGE value="modif style et finalisation" />
     <MESSAGE value="ajout remember me avec localstorage pour e-mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout remember me avec localstorage pour e-mail" />
+    <MESSAGE value="ajout replace pour éviter les retours en arrière vers la page login quant l'user est déjà log" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout replace pour éviter les retours en arrière vers la page login quant l'user est déjà log" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
